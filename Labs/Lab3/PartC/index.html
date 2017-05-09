@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>PartC Activity-Javascript Form Validation</title>
+    <script src="validation.js" type="text/javascript"></script>
+
+</head>
+<body>
+<form id="form" name="form" action="#" method="post" onsubmit="return validationForm()">
+    <p><label>First name <input type="text" id="fName" name="fName" onfocus="activeFunction(this.id);" onblur="inactiveFunction(this.id);"/></label></p>
+    <p><label>Last name <input type="text" id="lName" name="lName" onfocus="activeFunction(this.id);" onblur="inactiveFunction(this.id);" /></label></p>
+    <p><label>Address 1 <input type="text" id="addr1" name="addr1" onfocus="activeFunction(this.id);" onblur="inactiveFunction(this.id);" /></label></p>
+    <p><label>Address 2 <input type="text" id="addr2" name="addr2" onfocus="activeFunction(this.id);" onblur="inactiveFunction(this.id);" /></label></p>
+    <p><label>Email <input type="email" id="email" name="email" onfocus="activeFunction(this.id);" onblur="inactiveFunction(this.id);" /></label></p>
+
+    <p><input type="checkbox" id="terms" name="terms" /> Accept Terms and Conditions.
+        <span id="checkboxErrorMsg"></span><p>
+
+    <p><input type="submit" id="submit" name="submit" value="Submit"/><p>
+</form>
+
+</body>
+</html>
